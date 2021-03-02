@@ -2,57 +2,71 @@ let sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-let arrayRemove = (arr, value) => {
-  return arr.filter(function (ele) {
-    return ele != value;
-  });
-};
-
 ids = [
   "horizontal-tube",
 ];
+tube_ids = [
+	"first-tube",
+	"second-tube",
+	];
 
-let flag1 = true 
-let flag2 = true 
+let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
+	let path = document.getElementById(id);
+	let flags = [true, true];
+	while (true) {
+	  if (curPosition > finalPosition) break;
+	  curPosition += 0.01;
+	  path.setAttribute("offset", curPosition);
+	  await sleep(0.5);
+	}
+};
 
-let flow3 = document.getElementById("horizontal-tube");
-const xFinalPosition3 = 1;
-let xPos3 = 0;
-const interval3 = window.setInterval(() => {
-	if(xPos3 > 0.05) {
-		if(flag1){
-		let flow1 = document.getElementById("first-tube");
-		const xFinalPosition1 = 1;
-		let xPos1 = 0;
-		const interval1 = window.setInterval(() => {
-			if(xPos1 > xFinalPosition1) {
-				return window.clearInterval(interval1);
+let startAnimation = async () => {
+	for (let i = 0; i < ids.length; i++) {
+	  id = ids[i];
+	  let path = document.getElementById(id);
+	  flags = [true, true];
+	  let finalPosition = 1;
+	  let curPosition = 0;
+	  while (true) {
+		if (id == "horizontal-tube") {
+			if(curPosition > 0.05 && flags[0]) {
+				asyncMove("first-tube");
+				flags[0] = false
 			}
-			xPos1 += 0.001;
-		  	flow1.setAttribute("offset", xPos1);
-		})	
+			if(curPosition > 0.55 && flags[1]) {
+				asyncMove("second-tube");
+				flags[1] = false
+			}
 		}
-		flag1 = false
+		if (curPosition > finalPosition) break;
+		curPosition += 0.01;
+		path.setAttribute("offset", curPosition);
+		await sleep(0.5);
+	  }
 	}
-	if(xPos3 > 0.55) {
-		if(flag2){
-			let flow2 = document.getElementById("second-tube");
-		const xFinalPosition2 = 1;
-		let xPos2 = 0;
-		const interval2 = window.setInterval(() => {
-			if(xPos2 > xFinalPosition2) {
-				return window.clearInterval(interval2);
-			}
-			xPos2 += 0.001;
-		  	flow2.setAttribute("offset", xPos2);
-		})	
-		}		
-		flag2 = false
-	}
-	if(xPos3 > xFinalPosition3) {
-
-		return window.clearInterval(interval3);
-	}
-	xPos3 += 0.001;
-  	flow3.setAttribute("offset", xPos3);
-})
+  };
+  
+  let resetEverything = () => {
+	tube_ids.forEach((element) => {
+	  let path = document.getElementById(element);
+	  path.setAttribute("offset", 0);
+	});
+	ids.forEach((ele) => {
+	  let path = document.getElementById(ele);
+	  path.setAttribute("offset", 0);
+	});
+  };
+  disablestart = false;
+  let startAn = async () => {
+	resetEverything();
+	document.getElementById("startbutton").className = "button disabled";
+	document.getElementById("resetbutton").className = "button disabled";
+	document.getElementById("startbutton").disabled = true;
+	document.getElementById("resetbutton").disabled = true;
+	await startAnimation();
+	document.getElementById("startbutton").className = "button";
+	document.getElementById("resetbutton").className = "button";
+	document.getElementById("startbutton").disabled = false;
+	document.getElementById("resetbutton").disabled = false;
+  };
