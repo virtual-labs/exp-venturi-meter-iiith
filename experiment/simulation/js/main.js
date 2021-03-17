@@ -6,12 +6,12 @@ ids = ["horizontal-tube"];
 tube_ids = ["first-tube", "second-tube"];
 
 let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
-  speed2 = document.getElementById("water-flow").value;
-  speed2 = speed2 * 0.0002;
-  speed2 = speed2 == 0 ? 0.0002 : speed2;
   let path = document.getElementById(id);
   let flags = [true, true];
   while (true) {
+    speed2 = document.getElementById("water-flow").value;
+    speed2 = speed2 * 0.0002;
+    speed2 = speed2 == 0 ? 0.0002 : speed2;
     if (curPosition > finalPosition) break;
     curPosition += speed2;
     path.setAttribute("offset", curPosition);
@@ -20,9 +20,6 @@ let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
 };
 
 let startAnimation = async () => {
-  speed2 = document.getElementById("water-flow").value;
-  speed2 = speed2 * 0.0002;
-  speed2 = speed2 == 0 ? 0.0002 : speed2;
   for (let i = 0; i < ids.length; i++) {
     id = ids[i];
     let path = document.getElementById(id);
@@ -30,6 +27,9 @@ let startAnimation = async () => {
     let finalPosition = 1;
     let curPosition = 0;
     while (true) {
+      speed2 = document.getElementById("water-flow").value;
+      speed2 = speed2 * 0.0002;
+      speed2 = speed2 == 0 ? 0.0002 : speed2;    
       if (id == "horizontal-tube") {
         if (curPosition > 0.05 && flags[0]) {
           asyncMove("first-tube");
