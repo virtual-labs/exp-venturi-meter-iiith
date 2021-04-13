@@ -22,7 +22,7 @@ let animation = async () => {
   for (let i = 0; i < ids.length; i++) {
     id = ids[i];
     let path = document.getElementById(id);
-    flags = [true, true];
+    let flags = [true, true];
     let finalPosition = 1;
     let curPosition = 0;
     while (true) {
