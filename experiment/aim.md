@@ -8,4 +8,4 @@ The main aim is to study the variation of Cod and discharge with respect the hea
 Taking √h and h on x-axis and Q_a on y-axis  
 
 
-[Read More about the experiment in detail.](docs/2.Venturi_meter.pdf)
+To read about the Aim of the experiment click [here](docs/2.Venturi_meter.pdf)
