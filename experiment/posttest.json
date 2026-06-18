@@ -1,26 +1,158 @@
-[
+{
+  "version": 2.0,
+  "questions": [
     {
-       "question":"1.  The inlet length of the Venturimeter's greater than outlet pipe.",
-       "answers":{
-          "a":"True",
-          "b":"False"
-       },
-       "correctAnswer":"b"
+      "question": "1. In a venturimeter, where does the maximum fluid velocity occur?",
+      "answers": {
+        "a": "At the inlet section",
+        "b": "At the throat section",
+        "c": "At the outlet section",
+        "d": "In the diverging section"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. The inlet section has a larger cross-sectional area, resulting in lower velocity.",
+        "b": "Correct. The throat has the minimum area, causing the fluid velocity to be maximum according to the continuity equation.",
+        "c": "Incorrect. The outlet section generally has a larger area than the throat.",
+        "d": "Incorrect. Velocity decreases in the diverging section due to increasing area."
+      },
+      "difficulty": "beginner"
     },
     {
-       "question":"2. Actual discharge is obtained by (A)= a x h/t.",
-       "answers":{
-          "a":"True",
-          "b":"False"
-       },
-       "correctAnswer":"b"
+      "question": "2. The pressure at the throat section of a venturimeter is:",
+      "answers": {
+        "a": "Maximum",
+        "b": "Equal to atmospheric pressure",
+        "c": "Minimum",
+        "d": "Independent of velocity"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Pressure decreases as velocity increases in the throat section.",
+        "b": "Incorrect. Throat pressure depends on flow conditions and is not necessarily atmospheric.",
+        "c": "Correct. According to Bernoulli's theorem, pressure is minimum where velocity is maximum.",
+        "d": "Incorrect. Pressure and velocity are related through Bernoulli's equation."
+      },
+      "difficulty": "beginner"
     },
     {
-       "question":"3. Coefficient of discharge is calculated by C_d=Q_a/Q_t.",
-       "answers":{
-          "a":"True",
-          "b":"False"
-       },
-       "correctAnswer":"a"
+      "question": "3. The coefficient of discharge of a venturimeter is defined as:",
+      "answers": {
+        "a": "Ratio of theoretical discharge to actual discharge",
+        "b": "Ratio of actual discharge to theoretical discharge",
+        "c": "Ratio of pressure head to velocity head",
+        "d": "Ratio of throat area to pipe area"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. This ratio would generally be greater than unity and is not the definition of coefficient of discharge.",
+        "b": "Correct. Coefficient of discharge is the ratio of actual discharge to theoretical discharge.",
+        "c": "Incorrect. Pressure head and velocity head are components of total head, not the coefficient of discharge.",
+        "d": "Incorrect. Area ratio affects discharge but does not define the coefficient of discharge."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Actual discharge through a venturimeter is experimentally determined by:",
+      "answers": {
+        "a": "Measuring collected volume over a known time interval",
+        "b": "Using Bernoulli's equation alone",
+        "c": "Measuring pipe roughness",
+        "d": "Using atmospheric pressure"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Actual discharge is obtained from the volume of water collected in a known time period.",
+        "b": "Incorrect. Bernoulli's equation gives theoretical discharge, not actual discharge.",
+        "c": "Incorrect. Pipe roughness does not directly determine actual discharge experimentally.",
+        "d": "Incorrect. Atmospheric pressure is not used for measuring actual discharge."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. A venturimeter experiences lower permanent head loss than an orifice meter because of its:",
+      "answers": {
+        "a": "Smaller throat area",
+        "b": "Smooth converging and diverging sections",
+        "c": "Large pressure difference",
+        "d": "Short outlet section"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. The throat area alone does not account for reduced head loss.",
+        "b": "Correct. Gradual contraction and expansion minimize turbulence and energy losses.",
+        "c": "Incorrect. Large pressure differences are not responsible for lower losses.",
+        "d": "Incorrect. The diverging section is generally long rather than short."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. Which instrument is commonly connected to a venturimeter to measure pressure difference?",
+      "answers": {
+        "a": "Pitot tube",
+        "b": "Barometer",
+        "c": "Differential manometer",
+        "d": "Hydrometer"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. A Pitot tube measures velocity at a point.",
+        "b": "Incorrect. A barometer measures atmospheric pressure.",
+        "c": "Correct. Differential manometers are used to measure the pressure difference between inlet and throat sections.",
+        "d": "Incorrect. A hydrometer is used to measure specific gravity."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. If the pressure difference between the inlet and throat increases, the discharge through the venturimeter will generally:",
+      "answers": {
+        "a": "Decrease",
+        "b": "Become zero",
+        "c": "Remain constant",
+        "d": "Increase"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. A larger pressure difference corresponds to greater flow velocity and discharge.",
+        "b": "Incorrect. Zero discharge occurs only when there is no pressure difference.",
+        "c": "Incorrect. Discharge depends on the pressure difference.",
+        "d": "Correct. Greater pressure difference results in increased flow rate."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. Which of the following assumptions is commonly made while deriving the theoretical discharge equation for a venturimeter?",
+      "answers": {
+        "a": "Flow is unsteady and compressible",
+        "b": "Viscous losses are dominant",
+        "c": "Fluid density changes continuously",
+        "d": "Flow is steady and incompressible"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Standard venturimeter analysis assumes steady flow.",
+        "b": "Incorrect. Viscous losses are accounted for separately through the coefficient of discharge.",
+        "c": "Incorrect. Density is assumed constant for incompressible flow.",
+        "d": "Correct. The derivation is based on steady, incompressible flow and Bernoulli's theorem."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. For a given pressure difference, increasing the throat area of a venturimeter will generally:",
+      "answers": {
+        "a": "Increase the discharge",
+        "b": "Reduce the coefficient of discharge to zero",
+        "c": "Make pressure equal at all sections",
+        "d": "Eliminate energy losses"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Since discharge depends on throat area, increasing the throat area generally increases the flow rate.",
+        "b": "Incorrect. The coefficient of discharge does not become zero due to area changes.",
+        "c": "Incorrect. Pressure variation still exists between sections.",
+        "d": "Incorrect. Energy losses cannot be completely eliminated."
+      },
+      "difficulty": "advanced"
     }
- ]
+  ]
+}

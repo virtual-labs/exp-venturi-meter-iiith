@@ -1,0 +1,4 @@
+- To study the working principle of a Venturi meter for flow measurement.
+- To determine the coefficient of discharge (Cd) of the Venturi meter.
+- To investigate the relationship between the discharge and the pressure head difference.
+- To plot the characteristic graphs between actual discharge and head difference.
