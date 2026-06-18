@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. A venturimeter is primarily used to measure:",
+      "answers": {
+        "a": "Pressure",
+        "b": "Discharge or flow rate",
+        "c": "Fluid density",
+        "d": "Viscosity"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Pressure is measured using pressure measuring devices such as manometers and pressure gauges.",
+        "b": "Correct. A venturimeter is used to determine the discharge or flow rate through a pipe.",
+        "c": "Incorrect. Density is a fluid property and is not measured using a venturimeter.",
+        "d": "Incorrect. Viscosity is measured using viscometers."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Which principle forms the basis of operation of a venturimeter?",
+      "answers": {
+        "a": "Pascal's law",
+        "b": "Newton's law of viscosity",
+        "c": "Archimedes' principle",
+        "d": "Bernoulli's theorem"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Pascal's law relates to transmission of pressure in confined fluids.",
+        "b": "Incorrect. Newton's law of viscosity describes viscous behavior of fluids.",
+        "c": "Incorrect. Archimedes' principle deals with buoyancy.",
+        "d": "Correct. A venturimeter works on Bernoulli's theorem and the continuity equation."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Which section of a venturimeter has the minimum cross-sectional area?",
+      "answers": {
+        "a": "Inlet section",
+        "b": "Outlet section",
+        "c": "Throat section",
+        "d": "Diverging section"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. The inlet section has a larger area than the throat.",
+        "b": "Incorrect. The outlet section is larger than the throat section.",
+        "c": "Correct. The throat is the narrowest section and hence has the minimum area.",
+        "d": "Incorrect. The diverging section gradually increases in area."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. In a venturimeter, the angle of the converging section is generally:",
+      "answers": {
+        "a": "Greater than the angle of the diverging section",
+        "b": "Equal to the angle of the diverging section",
+        "c": "Less than the angle of the diverging section",
+        "d": "Zero"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. The converging section is steeper than the diverging section to minimize losses and avoid flow separation.",
+        "b": "Incorrect. The angles are not generally equal.",
+        "c": "Incorrect. The diverging section has a smaller angle to ensure gradual recovery of pressure.",
+        "d": "Incorrect. Both sections have finite angles."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Why is the diverging section of a venturimeter made longer than the converging section?",
+      "answers": {
+        "a": "To increase turbulence",
+        "b": "To reduce pressure recovery",
+        "c": "To minimize energy loss due to flow separation",
+        "d": "To increase velocity"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Increased turbulence would increase energy losses.",
+        "b": "Incorrect. The diverging section is designed to recover pressure effectively.",
+        "c": "Correct. A gradual divergence minimizes flow separation and energy losses.",
+        "d": "Incorrect. Velocity decreases in the diverging section."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. Which quantity is experimentally determined to calculate the coefficient of discharge of a venturimeter?",
+      "answers": {
+        "a": "Actual discharge",
+        "b": "Pipe roughness",
+        "c": "Atmospheric pressure",
+        "d": "Specific gravity of air"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. The coefficient of discharge is obtained by comparing actual discharge with theoretical discharge.",
+        "b": "Incorrect. Pipe roughness is not directly used in determining the coefficient of discharge.",
+        "c": "Incorrect. Atmospheric pressure is not required for this calculation.",
+        "d": "Incorrect. Specific gravity of air is unrelated to venturimeter discharge measurements."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. The coefficient of discharge of a venturimeter is usually:",
+      "answers": {
+        "a": "Greater than 1",
+        "b": "Equal to 0",
+        "c": "Equal to 1.5",
+        "d": "Slightly less than 1"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Due to losses, the coefficient of discharge cannot exceed unity.",
+        "b": "Incorrect. A zero coefficient would imply no flow.",
+        "c": "Incorrect. Values greater than one are physically unrealistic.",
+        "d": "Correct. Practical venturimeters have coefficients of discharge close to but less than unity."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. Which equation is used along with Bernoulli's theorem in deriving the discharge equation of a venturimeter?",
+      "answers": {
+        "a": "Continuity equation",
+        "b": "Momentum equation",
+        "c": "Euler's equation",
+        "d": "Darcy-Weisbach equation"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. The continuity equation relates velocities and areas at different sections.",
+        "b": "Incorrect. Momentum equation is used for force analysis.",
+        "c": "Incorrect. Euler's equation is fundamental but not directly used in standard venturimeter derivation.",
+        "d": "Incorrect. Darcy-Weisbach equation is used for friction loss calculations."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Why is a venturimeter preferred over an orifice meter for accurate discharge measurement?",
+      "answers": {
+        "a": "It causes larger head losses",
+        "b": "It has lower coefficient of discharge",
+        "c": "It produces smaller permanent head losses",
+        "d": "It eliminates pressure differences"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Larger head losses are undesirable.",
+        "b": "Incorrect. Venturimeters generally have high coefficients of discharge.",
+        "c": "Correct. Smooth contraction and expansion reduce permanent energy losses, improving accuracy.",
+        "d": "Incorrect. Pressure difference is essential for discharge measurement."
+      },
+      "difficulty": "advanced"
+    }
+  ]
+}
