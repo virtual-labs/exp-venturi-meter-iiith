@@ -1,11 +1,1 @@
-The Venturi meter used in this experiment consists of successive converging, uniform and diverging sections equipped with pressure taps at selected locations.
-A Venturi meter is a device for determining the flow-rate of a fluid down a pipe. One measures the pressure difference between the venture inlet and neck, and from this the flow-rate can be determined. 
-
-The main aim is to study the variation of Cod and discharge with respect the head by plotting the following graphs:
-- Q_a Vs √h
-- Q_a Vs h
-  
-Taking √h and h on x-axis and Q_a on y-axis  
-
-
-To read about the Aim of the experiment click [here](docs/2.Venturi_meter.pdf)
+The primary aim of this experiment is to study the working principle of a Venturi meter and to determine the rate of flow of fluid through a pipe using pressure differences. The experiment demonstrates the application of Bernoulli's theorem and the continuity equation by observing the relationship between pressure head and discharge in a converging-diverging passage. This provides a practical understanding of flow measurement techniques widely used in hydraulic engineering.
